@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sanga-navy: #1A2A4A;
+  --color-sanga-gold: #B8A375;
+  --color-sanga-cream: #FCFBF2;
+  --color-sanga-sand: #F7DCA5;
+  --color-sanga-gray: #EBE8E3;
+  --color-sanga-blue: #8092B7;
+  --color-sanga-brown: #3C2A00;
+
+  --color-base: var(--color-sanga-cream);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  * {
+    border-color: rgba(26, 42, 74, 0.1);
+  }
+  body {
+    background-color: var(--color-sanga-cream);
+    color: var(--color-sanga-navy);
+    font-family: var(--font-sans);
+    cursor: none;
+    overflow-x: hidden;
+    /* Typeset: optimal baseline for body text */
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Typeset: Clean heading resets */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Typeset: Dynamic fluid typography for massive impact (Bolder) */
+  .text-fluid-hero {
+    font-size: clamp(3.5rem, 8vw, 10rem);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+  }
+  
+  .text-fluid-h2 {
+    font-size: clamp(2.5rem, 6vw, 6.5rem);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+  }
+
+  .text-fluid-number {
+    font-size: clamp(6rem, 15vw, 15rem);
+    line-height: 0.8;
+    letter-spacing: -0.04em;
+  }
+  
+  /* Gilded Sanga Bold Architecture */
+  .sanga-panel {
+    @apply bg-white border border-[#1A2A4A]/5 shadow-[0_8px_32px_-12px_rgba(26,42,74,0.08)] rounded-[2rem] overflow-hidden;
+  }
+  
+  /* Colorize: Deeper, richer navy block for extreme contrast */
+  .sanga-panel-dark {
+    @apply bg-[#0D182E] text-[#FCFBF2] shadow-[0_16px_48px_-16px_rgba(26,42,74,0.4)] rounded-[2rem] overflow-hidden;
+  }
+  
+  /* Colorize: Rich vibrant gold accent panel */
+  .sanga-panel-gold {
+    @apply bg-[#B8A375] text-[#3C2A00] shadow-[0_16px_48px_-16px_rgba(184,163,117,0.4)] rounded-[2rem] overflow-hidden;
+  }
+
+  /* Colorize: Sand variant for softer contrast */
+  .sanga-panel-sand {
+    @apply bg-[#F7DCA5] text-[#3C2A00] rounded-[2rem] overflow-hidden;
+  }
+
+  .ease-spring {
+    transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  
+  .interactive {
+    transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.4s cubic-bezier(0.32, 0.72, 0, 1), color 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  
+  .interactive:active {
+    transform: scale(0.96);
+  }
+
+  /* Bolder: Image dramatic zoom reveal */
+  .img-dramatic {
+    @apply w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-110;
+  }
+}
+
+a, button, [role="button"], input, select, textarea {
+  cursor: none;
+}
