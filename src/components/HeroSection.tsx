@@ -74,7 +74,7 @@ export function HeroSection() {
               <motion.h1 variants={textRevealChild} className="flex items-center gap-4">
                 <span className="italic pr-4">Ancient</span> 
                 {/* Colorize: Bright Gold Pop out of nowhere */}
-                <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#B8A375] flex items-center justify-center -rotate-12 shadow-2xl shadow-[#B8A375]/40 mt-4">
+                <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#B8A375] flex items-center justify-center -rotate-12 mt-4 shadow-[0_0_0_1px_rgba(184,163,117,0.2),0_4px_20px_-2px_rgba(184,163,117,0.45),0_12px_48px_-4px_rgba(184,163,117,0.25),0_24px_64px_-12px_rgba(184,163,117,0.12)]">
                   <IconSparkles stroke={1.5} className="text-[#FCFBF2] w-8 h-8 md:w-12 md:h-12" />
                 </div>
               </motion.h1>
