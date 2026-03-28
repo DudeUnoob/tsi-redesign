@@ -30,7 +30,7 @@ export function ProgramsSection() {
               <span className="w-2 h-2 rounded-full bg-[#B8A375]" />
               Core Principles
             </span>
-            <h2 className="font-serif text-[clamp(4.5rem,8vw,8rem)] leading-[0.85] tracking-tighter text-[#1A2A4A] text-balance">
+            <h2 className="font-serif text-[clamp(3.5rem,10vw,8rem)] leading-[0.85] tracking-tighter text-[#1A2A4A] text-balance">
               OUR <br/>
               <span className="text-[#B8A375] italic pr-4">VALUES.</span>
             </h2>
@@ -59,7 +59,7 @@ export function ProgramsSection() {
                 style={{ zIndex: i + 1 }}
               >
                 {/* Double Bezel Inner Core */}
-                <div className="double-bezel-inner bg-white group-hover:bg-[#1A2A4A] group-hover:text-white transition-colors duration-[800ms] p-8 md:p-14 flex flex-col gap-8">
+                <div className="double-bezel-inner bg-white group-hover:bg-[#1A2A4A] group-hover:text-white transition-colors duration-[800ms] p-6 md:p-14 flex flex-col gap-8">
                   <div className="flex items-center justify-between">
                     <span className="font-serif text-3xl md:text-4xl text-[#1A2A4A]/20 group-hover:text-[#B8A375] transition-colors duration-500">
                       0{i + 1}.

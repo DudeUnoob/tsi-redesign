@@ -32,7 +32,7 @@ export function HeroSection() {
             variants={textRevealContainer}
             initial="hidden"
             animate="visible"
-            className="font-serif text-[clamp(4rem,8vw,8rem)] leading-[0.85] tracking-tighter text-[#1A2A4A] relative z-20"
+            className="font-serif text-[clamp(3.5rem,10vw,8rem)] leading-[0.85] tracking-tighter text-[#1A2A4A] relative z-20"
           >
             <div className="overflow-hidden pb-4 flex items-center gap-4">
               <motion.h1 variants={textRevealChild} className="italic pr-4">Ancient</motion.h1> 
@@ -89,7 +89,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 64, rotate: -2 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             transition={{ duration: 1.4, delay: 0.4, ease: [0.32, 0.72, 0, 1] }}
-            className="absolute right-0 md:right-8 top-1/2 -translate-y-1/2 w-[85%] max-w-[400px] aspect-[3/4] z-10"
+            className="absolute right-0 md:right-8 top-1/2 -translate-y-1/2 w-[85%] sm:w-[70%] md:w-[85%] max-w-[400px] aspect-[3/4] z-10"
           >
             <div className="w-full h-full double-bezel-outer bg-white origin-bottom hover:rotate-2 transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group">
               <div className="double-bezel-inner relative">
@@ -110,7 +110,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 100, x: -40, rotate: -6 }}
             animate={{ opacity: 1, y: 40, x: -40, rotate: -6 }}
             transition={{ duration: 1.5, delay: 0.6, ease: [0.32, 0.72, 0, 1] }}
-            className="absolute left-0 md:-left-8 bottom-12 w-[60%] max-w-[280px] aspect-square z-20"
+            className="absolute left-0 md:-left-8 bottom-12 w-[60%] sm:w-[50%] md:w-[60%] max-w-[280px] aspect-square z-20"
           >
             <div className="w-full h-full double-bezel-outer shadow-[0_30px_60px_-20px_rgba(0,0,0,0.15)] origin-top-left hover:rotate-[-2deg] transition-transform duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group">
               <div className="double-bezel-inner relative bg-[#1A2A4A]">

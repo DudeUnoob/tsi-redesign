@@ -15,7 +15,7 @@ export function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ ease: [0.32, 0.72, 0, 1], duration: 1.4 }}
-            className="font-serif text-[clamp(4.5rem,10vw,12rem)] leading-[0.8] tracking-tighter text-[#FDFBF7]"
+            className="font-serif text-[clamp(3.5rem,10vw,12rem)] leading-[0.8] tracking-tighter text-[#FDFBF7]"
           >
             JOIN <br/>
             <span className="text-[#B8A375] italic pr-2">The</span> Sanga.

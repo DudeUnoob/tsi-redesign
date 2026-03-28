@@ -22,7 +22,7 @@ export function MissionSection() {
           <span className="w-2 h-2 rounded-full bg-[#8092B7] animate-pulse" />
           01 // Our Foundation
         </span>
-        <h2 className="font-serif text-[clamp(3rem,6vw,6.5rem)] leading-[0.9] text-[#1A2A4A] max-w-4xl tracking-tighter text-balance">
+        <h2 className="font-serif text-[clamp(2.5rem,8vw,6.5rem)] leading-[0.9] text-[#1A2A4A] max-w-4xl tracking-tighter text-balance">
           Bridging the profound <span className="text-[#B8A375] italic">past</span> and the dynamic <span className="italic underline decoration-[#B8A375] decoration-2 underline-offset-8">present.</span>
         </h2>
       </div>
@@ -82,7 +82,7 @@ export function MissionSection() {
             variants={variants}
             className="flex-none h-[400px] md:h-[350px] group sanga-panel-dark"
           >
-            <div className="relative w-full h-full sanga-panel-dark-content p-8 md:p-10 flex flex-col justify-end">
+            <div className="relative w-full h-full sanga-panel-dark-content p-6 md:p-10 flex flex-col justify-end">
               {/* Colorize: Bright accent gradient bleeding from corner */}
               <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#B8A375] rounded-full blur-[80px] opacity-40 group-hover:opacity-70 transition-opacity duration-1000" />
               
@@ -114,7 +114,7 @@ export function MissionSection() {
             variants={variants}
             className="flex-1 min-h-[426px] group p-1.5 md:p-2 bg-[#F7DCA5]/30 rounded-[2rem] border border-[#B8A375]/10 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]"
           >
-             <div className="w-full h-full bg-[#F7DCA5] rounded-[calc(2rem-0.375rem)] md:rounded-[calc(2rem-0.5rem)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.5)] p-8 md:p-10 flex flex-col justify-between overflow-hidden relative">
+             <div className="w-full h-full bg-[#F7DCA5] rounded-[calc(2rem-0.375rem)] md:rounded-[calc(2rem-0.5rem)] shadow-[inset_0_1px_1px_rgba(255,255,255,0.5)] p-6 md:p-10 flex flex-col justify-between overflow-hidden relative">
                <div className="w-full h-full absolute inset-0 bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
                <motion.div 
                  animate={{ rotate: 360 }}

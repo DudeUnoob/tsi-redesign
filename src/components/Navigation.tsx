@@ -57,7 +57,7 @@ export function Navigation() {
             animate={{ opacity: 1, backdropFilter: "blur(40px)" }}
             exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
             transition={{ ease: [0.32, 0.72, 0, 1], duration: 0.8 }}
-            className="fixed inset-0 z-[90] bg-[#FDFBF7]/80 flex flex-col items-center justify-center pointer-events-auto"
+            className="fixed inset-0 z-[90] bg-[#FDFBF7]/80 flex flex-col items-center justify-center pointer-events-auto overflow-y-auto py-24"
           >
             {/* Minimal grain map overlay */}
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none mix-blend-multiply" />
@@ -78,7 +78,7 @@ export function Navigation() {
                     <Link 
                       href={`#${item.toLowerCase().replace(" ", "-")}`}
                       onClick={() => setIsOpen(false)}
-                      className="text-5xl md:text-8xl font-serif font-medium text-[#1A2A4A] hover:text-[#B8A375] transition-colors interactive duration-500 tracking-tighter"
+                      className="text-4xl sm:text-5xl md:text-8xl font-serif font-medium text-[#1A2A4A] hover:text-[#B8A375] transition-colors interactive duration-500 tracking-tighter"
                     >
                       {item}
                     </Link>
