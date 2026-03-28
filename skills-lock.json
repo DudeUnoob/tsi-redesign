@@ -46,6 +46,11 @@
       "sourceType": "github",
       "computedHash": "a40c2ecae54ba1b3b0a8e3bd3bbb8d0a0ff18143d5032c298ad5181906f11120"
     },
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "computedHash": "9d1e82c5c409d2b0247245a005bc0f7e4447c0999b78dcea60f568c1ba4a6694"
+    },
     "distill": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",
@@ -61,10 +66,30 @@
       "sourceType": "github",
       "computedHash": "2c211c20810c920c151279f0856355fc376922385fef56771c1987e9a6206f7a"
     },
+    "full-output-enforcement": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "computedHash": "26bd29ce4c5e02c7666b2d503609bf466bd32290822e91f0e984147048dbb924"
+    },
     "harden": {
       "source": "pbakaus/impeccable",
       "sourceType": "github",
       "computedHash": "7954be28d1dbc2a9a1fa7dd32bf8b23a74f2aaacc5f3774a71fb3eea8c30bf0f"
+    },
+    "high-end-visual-design": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "computedHash": "7db385e4c5370e5a7fca9704a1361b056e4504ea6a03924bb86f33a4f00b5c73"
+    },
+    "industrial-brutalist-ui": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "computedHash": "8fc355c4aadb7d29c53ca28bc41be3cd6eea765d121e3737c4dc2d0f90a8effa"
+    },
+    "minimalist-ui": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "computedHash": "08873a3131d3be27bef9bf3304b310b16b44ca6e3561aebe532797be3443f6bd"
     },
     "normalize": {
       "source": "pbakaus/impeccable",
@@ -95,6 +120,16 @@
       "source": "pbakaus/impeccable",
       "sourceType": "github",
       "computedHash": "3d6142720c5f1da729eac437c186291a5451cf4f0875a5c30cea7a9ec4698e83"
+    },
+    "redesign-existing-projects": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "computedHash": "b405eee0e0e80fc243f731d9aa368bca307e356db7e6157d27101d369dac6726"
+    },
+    "stitch-design-taste": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "computedHash": "3aa58992f0fd9673b975cd48cd4f8ae4b4976fd5cdd9f20e26d3d447aee317fb"
     },
     "teach-impeccable": {
       "source": "pbakaus/impeccable",

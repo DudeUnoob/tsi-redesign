@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
-    "@tabler/icons-react": "^3.41.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
     "next": "16.2.0",
@@ -21,6 +20,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/paper": "^0.11.14",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",

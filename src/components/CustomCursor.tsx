@@ -22,6 +22,7 @@ export function CustomCursor() {
   const ringY = useSpring(mouseY, ringSpringConfig);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     setIsVisible(true);
 
     const moveCursor = (e: MouseEvent) => {
@@ -60,13 +61,13 @@ export function CustomCursor() {
     <>
       {/* Outer Ring */}
       <motion.div
-        className="fixed top-0 left-0 w-10 h-10 rounded-full border pointer-events-none z-[100] transform -translate-x-1/2 -translate-y-1/2 hidden md:block mix-blend-difference"
+        className="fixed top-0 left-0 w-10 h-10 rounded-full border pointer-events-none z-[100] transform -translate-x-1/2 -translate-y-1/2 hidden md:block mix-blend-multiply"
         style={{
           x: ringX,
           y: ringY,
           scale: isHovering ? 2 : 1,
-          backgroundColor: isHovering ? "rgba(255,255,255,1)" : "transparent",
-          borderColor: isHovering ? "transparent" : "rgba(255,255,255,1)",
+          backgroundColor: isHovering ? "rgba(184, 163, 117, 0.1)" : "transparent",
+          borderColor: isHovering ? "transparent" : "rgba(184, 163, 117, 0.4)",
         }}
         transition={{ 
           scale: { type: "spring", stiffness: 300, damping: 20 },
@@ -76,11 +77,11 @@ export function CustomCursor() {
       
       {/* Inner Dot */}
       <motion.div
-        className="fixed top-0 left-0 w-2 h-2 rounded-full pointer-events-none z-[100] transform -translate-x-1/2 -translate-y-1/2 hidden md:block mix-blend-difference"
+        className="fixed top-0 left-0 w-2 h-2 rounded-full pointer-events-none z-[100] transform -translate-x-1/2 -translate-y-1/2 hidden md:block mix-blend-multiply"
         style={{
           x: dotX,
           y: dotY,
-          backgroundColor: "rgba(255,255,255,1)",
+          backgroundColor: "rgba(184, 163, 117, 1)",
           scale: isHovering ? 0 : 1, // Disappear when hovering
         }}
         transition={{ scale: { duration: 0.2 } }}

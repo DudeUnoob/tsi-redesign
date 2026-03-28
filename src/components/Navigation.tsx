@@ -17,33 +17,35 @@ export function Navigation() {
         transition={{ ease: [0.32, 0.72, 0, 1], duration: 1.2, delay: 0.1 }}
         className="fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-max px-4 md:px-0"
       >
-        <div className="bg-[#FCFBF2]/60 backdrop-blur-2xl border border-[#1A2A4A]/10 rounded-full p-2 flex items-center justify-between gap-8 mx-auto shadow-[0_8px_32px_-8px_rgba(26,42,74,0.1)]">
+        <div className="bg-[#FDFBF7]/60 backdrop-blur-2xl border border-black/5 rounded-full p-2 flex items-center justify-between gap-8 mx-auto shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)]">
           
           {/* Logo */}
-          <Link href="/" className="interactive group relative overflow-hidden flex items-center justify-center bg-[#1A2A4A] text-[#FCFBF2] font-sans font-medium px-5 py-2.5 rounded-full cursor-none ml-1">
+          <Link href="/" className="interactive group relative overflow-hidden flex items-center justify-center bg-[#1A2A4A] text-white font-sans font-medium px-5 py-2.5 rounded-full ml-1">
             <span className="relative z-10 tracking-widest text-sm uppercase">TSI</span>
           </Link>
 
-          {/* Hamburger Morph - fluid dynamics */}
+          {/* Hamburger Morph - fluid dynamics (Absolute Positioning) */}
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="interactive group relative w-12 h-12 flex flex-col items-center justify-center gap-1.5 rounded-full border border-[#1A2A4A]/10 hover:border-[#B8A375]/50 bg-white mr-1 shadow-sm"
+            className="interactive relative w-12 h-12 flex items-center justify-center rounded-full border border-black/5 hover:border-[#B8A375]/50 bg-white mr-1 shadow-sm active:scale-[0.96]"
           >
-            <motion.span 
-              animate={isOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="block w-5 h-[1.5px] bg-[#1A2A4A] rounded-full origin-center"
-            />
-            <motion.span 
-              animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
-              transition={{ duration: 0.2 }}
-              className="block w-5 h-[1.5px] bg-[#1A2A4A] rounded-full"
-            />
-            <motion.span 
-              animate={isOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="block w-5 h-[1.5px] bg-[#1A2A4A] rounded-full origin-center"
-            />
+            <div className="relative w-5 h-5 flex items-center justify-center">
+              <motion.span 
+                animate={isOpen ? { rotate: 45, y: 0 } : { rotate: 0, y: -4 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="absolute w-5 h-[1.5px] bg-[#1A2A4A] rounded-full"
+              />
+              <motion.span 
+                animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+                transition={{ duration: 0.2 }}
+                className="absolute w-5 h-[1.5px] bg-[#1A2A4A] rounded-full"
+              />
+              <motion.span 
+                animate={isOpen ? { rotate: -45, y: 0 } : { rotate: 0, y: 4 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                className="absolute w-5 h-[1.5px] bg-[#1A2A4A] rounded-full"
+              />
+            </div>
           </button>
         </div>
       </motion.nav>
@@ -51,25 +53,26 @@ export function Navigation() {
       <AnimatePresence>
         {isOpen && (
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95, filter: "blur(20px)" }}
-            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-            exit={{ opacity: 0, scale: 0.98, filter: "blur(20px)" }}
+            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            animate={{ opacity: 1, backdropFilter: "blur(40px)" }}
+            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
             transition={{ ease: [0.32, 0.72, 0, 1], duration: 0.8 }}
-            className="fixed inset-0 z-[90] bg-[#FCFBF2]/90 backdrop-blur-3xl flex flex-col items-center justify-center pointer-events-auto"
+            className="fixed inset-0 z-[90] bg-[#FDFBF7]/80 flex flex-col items-center justify-center pointer-events-auto"
           >
-            <div className="absolute inset-0 bg-gradient-to-t from-[#EBE8E3]/50 to-transparent pointer-events-none" />
+            {/* Minimal grain map overlay */}
+            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none mix-blend-multiply" />
 
             <div className="flex flex-col items-center gap-8 relative z-10">
               {menuItems.map((item, idx) => (
-                <div key={item} className="overflow-hidden">
+                <div key={item} className="overflow-hidden p-2">
                   <motion.div
-                    initial={{ y: "150%", opacity: 0, rotate: 5 }}
-                    animate={{ y: "0%", opacity: 1, rotate: 0 }}
-                    exit={{ y: "100%", opacity: 0 }}
+                    initial={{ y: 48, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    exit={{ y: 24, opacity: 0 }}
                     transition={{ 
                       ease: [0.32, 0.72, 0, 1], 
                       duration: 0.8, 
-                      delay: 0.1 + (idx * 0.1) 
+                      delay: 0.1 + (idx * 0.05) 
                     }}
                   >
                     <Link 
@@ -82,18 +85,18 @@ export function Navigation() {
                   </motion.div>
                 </div>
               ))}
-
+              
               <motion.div
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: 20, opacity: 0 }}
-                transition={{ ease: [0.32, 0.72, 0, 1], duration: 0.8, delay: 0.6 }}
+                transition={{ ease: [0.32, 0.72, 0, 1], duration: 0.8, delay: 0.35 }}
                 className="mt-12"
               >
                 <Link 
                   href="#donate" 
                   onClick={() => setIsOpen(false)}
-                  className="interactive px-12 py-4 rounded-full bg-[#B8A375] text-[#1A2A4A] font-sans uppercase tracking-widest hover:bg-[#1A2A4A] hover:text-[#FCFBF2] transition-colors duration-500 font-bold text-sm shadow-xl shadow-[#B8A375]/20"
+                  className="interactive px-12 py-4 rounded-full bg-[#1A2A4A] text-white font-sans uppercase tracking-[0.2em] transition-all hover:bg-[#B8A375] duration-500 font-bold text-[10px] md:text-sm shadow-[0_20px_40px_-15px_rgba(26,42,74,0.3)]"
                 >
                   Donate to TSI
                 </Link>

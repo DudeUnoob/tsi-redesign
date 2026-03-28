@@ -39,12 +39,12 @@ const FlowBackground = memo(() => {
     let mousePos = viewCenter.clone();
 
     // Mouse movement
-    paper.view.onMouseMove = (event: paper.ToolEvent | any) => {
+    paper.view.onMouseMove = (event: paper.ToolEvent) => {
         mousePos = event.point;
     };
 
     // Animation loop
-    paper.view.onFrame = (event: any) => {
+    paper.view.onFrame = (event: { count: number; time: number; delta: number }) => {
       // Rotate the path slowly
       path.rotate(0.05, viewCenter);
       

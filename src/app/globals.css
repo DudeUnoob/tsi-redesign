@@ -3,17 +3,11 @@
 @theme {
   --color-sanga-navy: #1A2A4A;
   --color-sanga-gold: #B8A375;
-  --color-sanga-cream: #FCFBF2;
+  --color-sanga-cream: #FDFBF7;
   --color-sanga-sand: #F7DCA5;
   --color-sanga-gray: #EBE8E3;
   --color-sanga-blue: #8092B7;
   --color-sanga-brown: #3C2A00;
-
-  --color-base: var(--color-sanga-cream);
-
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
-  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
 }
 
 @layer base {
@@ -54,7 +48,7 @@
     line-height: 0.9;
     letter-spacing: -0.03em;
   }
-  
+
   .text-fluid-h2 {
     font-size: clamp(2.5rem, 6vw, 6.5rem);
     line-height: 0.95;
@@ -66,42 +60,170 @@
     line-height: 0.8;
     letter-spacing: -0.04em;
   }
-  
-  /* Gilded Sanga Bold Architecture */
-  .sanga-panel {
-    @apply bg-white border border-[#1A2A4A]/5 shadow-[0_8px_32px_-12px_rgba(26,42,74,0.08)] rounded-[2rem] overflow-hidden;
+
+  /* Gilded Sanga Bold Architecture (Double Bezel Base) */
+  .double-bezel-outer {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0.375rem;
+    border-radius: 2rem;
+    overflow: hidden;
   }
-  
+
+  @media (min-width: 768px) {
+    .double-bezel-outer {
+      padding: 0.5rem;
+    }
+  }
+
+  .double-bezel-inner {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: calc(2rem - 0.375rem);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .double-bezel-inner {
+      border-radius: calc(2rem - 0.5rem);
+    }
+  }
+
+  .double-bezel-outer-dark {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.375rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: 768px) {
+    .double-bezel-outer-dark {
+      padding: 0.5rem;
+    }
+  }
+
+  .double-bezel-inner-dark {
+    background-color: #0D182E;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: calc(2rem - 0.375rem);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .double-bezel-inner-dark {
+      border-radius: calc(2rem - 0.5rem);
+    }
+  }
+
+  .sanga-panel {
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0.375rem;
+    border-radius: 2rem;
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .sanga-panel {
+      padding: 0.5rem;
+    }
+  }
+
+  .sanga-panel-content {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: calc(2rem - 0.375rem);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .sanga-panel-content {
+      border-radius: calc(2rem - 0.5rem);
+    }
+  }
+
   /* Colorize: Deeper, richer navy block for extreme contrast */
   .sanga-panel-dark {
-    @apply bg-[#0D182E] text-[#FCFBF2] shadow-[0_16px_48px_-16px_rgba(26,42,74,0.4)] rounded-[2rem] overflow-hidden;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.375rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
   }
-  
+
+  @media (min-width: 768px) {
+    .sanga-panel-dark {
+      padding: 0.5rem;
+    }
+  }
+
+  .sanga-panel-dark-content {
+    background-color: #0D182E;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: calc(2rem - 0.375rem);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+  }
+
+  @media (min-width: 768px) {
+    .sanga-panel-dark-content {
+      border-radius: calc(2rem - 0.5rem);
+    }
+  }
+
   /* Colorize: Rich vibrant gold accent panel */
   .sanga-panel-gold {
-    @apply bg-[#B8A375] text-[#3C2A00] shadow-[0_16px_48px_-16px_rgba(184,163,117,0.4)] rounded-[2rem] overflow-hidden;
+    background-color: #B8A375;
+    color: #3C2A00;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4);
+    border-radius: 2rem;
+    overflow: hidden;
   }
 
   /* Colorize: Sand variant for softer contrast */
   .sanga-panel-sand {
-    @apply bg-[#F7DCA5] text-[#3C2A00] rounded-[2rem] overflow-hidden;
+    background-color: #F7DCA5;
+    color: #3C2A00;
+    border-radius: 2rem;
+    overflow: hidden;
   }
 
   .ease-spring {
     transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   }
-  
+
   .interactive {
     transition: transform 0.4s cubic-bezier(0.32, 0.72, 0, 1), background-color 0.4s cubic-bezier(0.32, 0.72, 0, 1), color 0.4s cubic-bezier(0.32, 0.72, 0, 1);
   }
-  
+
   .interactive:active {
     transform: scale(0.96);
   }
 
   /* Bolder: Image dramatic zoom reveal */
   .img-dramatic {
-    @apply w-full h-full object-cover transition-transform duration-[3000ms] group-hover:scale-110;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 3000ms;
+  }
+
+  .group:hover .img-dramatic {
+    transform: scale(1.1);
   }
 }
 
