@@ -1,32 +1,44 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const events = [
   {
     title: "Camp Ignite",
-    subtitle: "Ages 11-17 • GreenBrier State Park, MD",
+    subtitle: "Ages 11–17 • June 24–28 • GreenBrier, MD",
     desc: "A safe and nurturing environment where youth have the opportunity to deepen their faith, build friendships, and have unforgettable fun.",
     img: "https://picsum.photos/seed/camp-ignite/800/800",
+    href: "/camp-ignite",
   },
   {
     title: "TSI Summit",
-    subtitle: "Annual Leadership Retreat",
-    desc: "Bringing together the best and brightest minds to create the next generation of leaders for our community.",
-    img: "https://picsum.photos/seed/tsi-summit/800/800",
+    subtitle: "Ages 18–30 • July 30 – Aug 3 • New Vrindaban",
+    desc: "The 12th annual summer retreat — association, kirtan, sanga discussions, and the unique atmosphere that makes this retreat special every year.",
+    img: "https://images.squarespace-cdn.com/content/v1/55c3a641e4b01d44af64ae03/9c2de27b-70d6-4f71-84f1-7677ba1c4dd0/Summit26+Reg+Open+1x1.png",
+    href: "/tsi-summit",
+  },
+  {
+    title: "East Coast Retreat",
+    subtitle: "Ages 16–30 • June 4–7 • Potomac, MD",
+    desc: "Deep sanga, engaging guest speakers, dynamic workshops, kirtan, and delicious prasadam at ISKCON of DC.",
+    img: "https://images.squarespace-cdn.com/content/v1/55c3a641e4b01d44af64ae03/42af22d1-ea73-4806-ba7b-17c7c415afa5/DSCF0624.jpeg",
+    href: "/east-coast-retreat",
   },
   {
     title: "Midwest Retreat",
-    subtitle: "Regional Sanga",
+    subtitle: "Ages 14–30 • April 10–12",
     desc: "A regional gathering to connect, reflect, and grow together through spiritual activism and meaningful relationships.",
-    img: "https://picsum.photos/seed/midwest-retreat/800/800",
+    img: "https://images.squarespace-cdn.com/content/v1/55c3a641e4b01d44af64ae03/cb2418ed-47e3-4cc4-80db-e0f26530aaa1/MW26+Reg+Open+Post+45.png",
+    href: "/midwest-retreat",
   },
   {
     title: "Mission Trip",
-    subtitle: "Global Service",
-    desc: "Providing youth an opportunity to serve in a unique capacity and make an impact beyond our local communities.",
-    img: "/VrindavanYatra-451.webp",
-  }
+    subtitle: "Ages 18–30 • Nov 14–22 • Brazil",
+    desc: "A seva-based immersion at Nova Gokula Farm — eco-building projects, daily sadhana, and a three-day kirtan festival. Flight + $125 registration.",
+    img: "https://images.squarespace-cdn.com/content/v1/55c3a641e4b01d44af64ae03/717065c1-66c5-483e-be4f-431f468c862f/1200x675_cmsv2_f7b63a9e-9088-51de-9993-2ab692ff4780-8300702.jpg.webp",
+    href: "/mission-trip",
+  },
 ];
 
 export function EventsSection() {
@@ -87,12 +99,12 @@ export function EventsSection() {
                     
                     {/* Magnetic Interactive Button inside card */}
                     <div className="mt-8">
-                      <button className="flex items-center gap-3 interactive group/btn">
+                      <Link href={event.href} className="flex items-center gap-3 interactive group/btn">
                         <span className="text-white text-xs font-bold uppercase tracking-widest group-hover/btn:text-[#B8A375] transition-colors">Details</span>
                         <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center transition-transform duration-500 group-hover/btn:translate-x-1 group-hover/btn:bg-[#B8A375] group-hover/btn:border-[#B8A375]">
                           <span className="text-white">→</span>
                         </div>
-                      </button>
+                      </Link>
                     </div>
                   </div>
                   

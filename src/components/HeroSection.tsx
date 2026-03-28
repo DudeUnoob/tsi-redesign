@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowUpRight, Sparkle } from '@phosphor-icons/react';
+import Link from "next/link";
 
 const textRevealContainer = {
   hidden: { opacity: 0 },
@@ -72,14 +73,14 @@ export function HeroSection() {
             className="ml-2"
           >
             {/* Button-in-Button Trailing Icon & Magnetic Effect */}
-            <button className="group flex items-center bg-[#1A2A4A] rounded-full p-2 pl-8 cursor-none interactive active:scale-[0.98] shadow-[0_20px_40px_-15px_rgba(26,42,74,0.3)]">
+            <Link href="#events" className="group flex items-center bg-[#1A2A4A] rounded-full p-2 pl-8 cursor-none interactive active:scale-[0.98] shadow-[0_20px_40px_-15px_rgba(26,42,74,0.3)]">
               <span className="text-[#FDFBF7] font-sans uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold mr-6">
                 Join our Retreats
               </span>
               <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-[#B8A375] group-hover:scale-105 group-hover:-translate-y-[1px]">
                 <ArrowUpRight weight="light" className="text-[#FDFBF7] w-5 h-5 group-hover:translate-x-[1px] group-hover:-translate-y-[1px] transition-transform duration-500" />
               </div>
-            </button>
+            </Link>
           </motion.div>
         </div>
 

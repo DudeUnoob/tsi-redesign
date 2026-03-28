@@ -8,8 +8,8 @@ const footerLinks = [
   { label: "Home", href: "/" },
   { label: "Events", href: "#events" },
   { label: "Resources", href: "#resources" },
-  { label: "Donate", href: "https://www.sangainitiative.org/donate" },
-  { label: "Contact", href: "mailto:info@sangainitiative.org" },
+  { label: "Donate", href: "/donate" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Footer() {
