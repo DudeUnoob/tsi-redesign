@@ -1,5 +1,6 @@
 "use client";
 
+import { GlobeHemisphereWest } from "@phosphor-icons/react";
 import { EventPageLayout } from "@/components/EventPageLayout";
 import { Footer } from "@/components/Footer";
 
@@ -27,6 +28,11 @@ export default function MissionTripPage() {
         ctaLabel="Register Here"
         ctaHref="https://www.sangainitiative.org/tsi-regionals/tsi-mission-trip"
         note="Spots are first come, first serve \u2014 the first 20 youth who register and book flights secure their place. You must have a flight itinerary to reserve your spot. Arrive RIO (GIG) Nov 14th 8:30\u201311AM. Depart S\u00e3o Paulo (GRU) Nov 22nd 8:30\u201311:30PM."
+        vibe="glass"
+        heroLayout="cascade"
+        themeColor="emerald"
+        highlightIcon={<GlobeHemisphereWest weight="duotone" />}
+        bentoSpans={["md:col-span-7", "md:col-span-5", "md:col-span-12 lg:col-span-6", "md:col-span-12 lg:col-span-6"]}
       />
       <Footer />
     </>

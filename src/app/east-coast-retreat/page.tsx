@@ -1,5 +1,6 @@
 "use client";
 
+import { MapPin } from "@phosphor-icons/react";
 import { EventPageLayout } from "@/components/EventPageLayout";
 import { Footer } from "@/components/Footer";
 
@@ -26,6 +27,11 @@ export default function EastCoastRetreatPage() {
         ctaLabel="Register Here"
         ctaHref="https://www.sangainitiative.org/tsi-regionals/tsi-east-coast-2026"
         note="Full refunds will only be issued until May 1st, 2026."
+        vibe="structural"
+        heroLayout="split-left"
+        themeColor="sky"
+        highlightIcon={<MapPin weight="duotone" />}
+        bentoSpans={["md:col-span-8", "md:col-span-4", "md:col-span-12", "md:col-span-12"]}
       />
       <Footer />
     </>

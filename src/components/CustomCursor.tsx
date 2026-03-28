@@ -12,12 +12,12 @@ export function CustomCursor() {
   const mouseY = useMotionValue(-100);
 
   // Inner dot (fast, tight spring)
-  const dotSpringConfig = { damping: 25, stiffness: 400, mass: 0.1 };
+  const dotSpringConfig = { damping: 12, stiffness: 700, mass: 0.02 };
   const dotX = useSpring(mouseX, dotSpringConfig);
   const dotY = useSpring(mouseY, dotSpringConfig);
 
-  // Outer ring (slow, loose spring for lag effect)
-  const ringSpringConfig = { damping: 28, stiffness: 280, mass: 0.5 };
+  // Outer ring (faster, tighter spring for reduced lag)
+  const ringSpringConfig = { damping: 10, stiffness: 800, mass: 0.2 };
   const ringX = useSpring(mouseX, ringSpringConfig);
   const ringY = useSpring(mouseY, ringSpringConfig);
 

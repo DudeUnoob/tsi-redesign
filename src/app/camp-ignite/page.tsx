@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Fire } from "@phosphor-icons/react";
 import { EventPageLayout } from "@/components/EventPageLayout";
 import { Footer } from "@/components/Footer";
 
@@ -53,6 +54,10 @@ export default function CampIgnitePage() {
         ctaLabel="Register Now"
         ctaHref="https://www.sangainitiative.org/camp-registration09/camp-ignite-2025"
         note="Limited spots available. Step 1: Registration, Step 2: Payment, Step 3: Liability Form."
+        vibe="luxury"
+        heroLayout="split-right"
+        themeColor="orange"
+        highlightIcon={<Fire weight="fill" />}
       >
         {/* Registration Steps */}
         <section className="max-w-4xl mx-auto px-4 md:px-8 mb-24">

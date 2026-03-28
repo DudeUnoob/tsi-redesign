@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
       { label: "TSI Summit", href: "/tsi-summit" },
       { label: "East Coast Retreat", href: "/east-coast-retreat" },
       { label: "Midwest Retreat", href: "/midwest-retreat" },
-      { label: "West Coast Retreat", href: "https://www.sangainitiative.org/west-coast-retreat" },
+      { label: "West Coast Retreat", href: "/west-coast-retreat" },
       { label: "Mission Trip", href: "/mission-trip" },
       { label: "Camp Ignite", href: "/camp-ignite" },
     ],

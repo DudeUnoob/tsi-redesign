@@ -8,7 +8,7 @@ const events = [
     title: "Camp Ignite",
     subtitle: "Ages 11–17 • June 24–28 • GreenBrier, MD",
     desc: "A safe and nurturing environment where youth have the opportunity to deepen their faith, build friendships, and have unforgettable fun.",
-    img: "https://picsum.photos/seed/camp-ignite/800/800",
+    img: "https://images.squarespace-cdn.com/content/v1/55c3a641e4b01d44af64ae03/1752071425850-I8MCAXI0LAW4EPAVB1Y9/IMG_8842.jpg?format=1500w",
     href: "/camp-ignite",
   },
   {
@@ -17,6 +17,13 @@ const events = [
     desc: "The 12th annual summer retreat — association, kirtan, sanga discussions, and the unique atmosphere that makes this retreat special every year.",
     img: "https://images.squarespace-cdn.com/content/v1/55c3a641e4b01d44af64ae03/9c2de27b-70d6-4f71-84f1-7677ba1c4dd0/Summit26+Reg+Open+1x1.png",
     href: "/tsi-summit",
+  },
+  {
+    title: "West Coast Retreat",
+    subtitle: "Ages 18–30 • Sept 9–13 • Waikiki Beach, HI",
+    desc: "Stay at a beachfront resort and enjoy deep sanga, guest speakers, workshops, water sports, kirtan, and delicious prasadam.",
+    img: "https://images.squarespace-cdn.com/content/v1/55c3a641e4b01d44af64ae03/29accca4-513e-42f9-903c-d5aac3933666/WC26+Reg+Open+Post+11+%281%29.png",
+    href: "/west-coast-retreat",
   },
   {
     title: "East Coast Retreat",
@@ -99,7 +106,7 @@ export function EventsSection() {
                     
                     {/* Magnetic Interactive Button inside card */}
                     <div className="mt-8">
-                      <Link href={event.href} className="flex items-center gap-3 interactive group/btn">
+                      <Link href={event.href} className="flex items-center gap-3 interactive group/btn w-max">
                         <span className="text-white text-xs font-bold uppercase tracking-widest group-hover/btn:text-[#B8A375] transition-colors">Details</span>
                         <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center transition-transform duration-500 group-hover/btn:translate-x-1 group-hover/btn:bg-[#B8A375] group-hover/btn:border-[#B8A375]">
                           <span className="text-white">→</span>

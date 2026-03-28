@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Chats } from "@phosphor-icons/react";
 import { EventPageLayout } from "@/components/EventPageLayout";
 import { Footer } from "@/components/Footer";
 
@@ -37,6 +38,11 @@ export default function TsiSummitPage() {
         ctaLabel="Register Now"
         ctaHref="https://www.sangainitiative.org/retreat-registration/tsi-summit-2025"
         note="Last day to cancel and receive a full refund is June 30th, 2026. Contact info@sangainitiative.org with any questions."
+        vibe="luxury"
+        heroLayout="cascade"
+        themeColor="rose"
+        highlightIcon={<Chats weight="duotone" />}
+        bentoSpans={["md:col-span-12 lg:col-span-8", "md:col-span-12 lg:col-span-4", "md:col-span-12", "md:col-span-12"]}
       >
         {/* Photo Gallery */}
         <section className="max-w-[1400px] mx-auto px-4 md:px-8 xl:px-0 mb-24">

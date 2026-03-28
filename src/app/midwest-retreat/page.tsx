@@ -1,5 +1,6 @@
 "use client";
 
+import { Leaf } from "@phosphor-icons/react";
 import { EventPageLayout } from "@/components/EventPageLayout";
 import { Footer } from "@/components/Footer";
 
@@ -26,6 +27,11 @@ export default function MidwestRetreatPage() {
         ctaLabel="Register Here"
         ctaHref="https://www.sangainitiative.org/tsi-regionals/tsi-midwest-2026"
         note="Full refunds will only be issued until March 30th, 2026."
+        vibe="structural"
+        heroLayout="split-right"
+        themeColor="purple"
+        highlightIcon={<Leaf weight="duotone" />}
+        bentoSpans={["md:col-span-12 lg:col-span-8", "md:col-span-4", "md:col-span-6", "md:col-span-6"]}
       />
       <Footer />
     </>
