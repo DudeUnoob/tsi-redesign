@@ -42,7 +42,7 @@ export default function RootLayout({
         
         <CustomCursor />
         <Navigation />
-        <main className="flex-1 w-full max-w-7xl mx-auto px-4 md:px-0 overflow-x-hidden pt-24 md:pt-32 relative z-10">
+        <main className="flex-1 w-full overflow-x-hidden relative z-10">
           {children}
         </main>
       </body>

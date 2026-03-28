@@ -20,10 +20,10 @@ export function MissionSection() {
       <div className="flex flex-col mb-24 md:mb-32 relative z-20">
         <span className="inline-flex w-max items-center gap-3 rounded-full border border-black/5 bg-white px-6 py-2 text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold text-[#8092B7] mb-8 tabular-nums shadow-sm">
           <span className="w-2 h-2 rounded-full bg-[#8092B7] animate-pulse" />
-          01 // Our Foundation
+          01 // Who Are We
         </span>
         <h2 className="font-serif text-[clamp(2.5rem,8vw,6.5rem)] leading-[0.9] text-[#1A2A4A] max-w-4xl tracking-tighter text-balance">
-          Bridging the profound <span className="text-[#B8A375] italic">past</span> and the dynamic <span className="italic underline decoration-[#B8A375] decoration-2 underline-offset-8">present.</span>
+          Empowering the <span className="text-[#B8A375] italic">next</span> generation of <span className="italic underline decoration-[#B8A375] decoration-2 underline-offset-8">leaders.</span>
         </h2>
       </div>
 
@@ -40,9 +40,10 @@ export function MissionSection() {
           className="md:col-span-7 group relative sanga-panel flex flex-col"
         >
           <div className="w-full h-[500px] md:h-[800px] relative sanga-panel-content">
-            <img 
-              src="https://picsum.photos/seed/tsi-sanctuary/1200/800" 
+            <img
+              src="https://picsum.photos/seed/tsi-sanctuary/1200/800"
               alt="Community Retreat"
+              loading="eager"
               className="img-dramatic"
             />
             <div className="absolute inset-0 bg-[#0D182E]/20 group-hover:bg-[#0D182E]/40 transition-colors duration-1000" />
@@ -51,8 +52,8 @@ export function MissionSection() {
             <div className="absolute bottom-4 md:bottom-8 left-4 md:left-8 right-4 md:right-8 double-bezel-outer bg-[#FDFBF7]/40 backdrop-blur-2xl">
                <div className="double-bezel-inner bg-[#FDFBF7]/90 p-6 md:p-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                  <div className="max-w-md">
-                   <h3 className="font-serif font-medium text-3xl md:text-4xl mb-4 text-[#1A2A4A] leading-tight text-balance tracking-tighter">Authentic <br/>Connection.</h3>
-                   <p className="max-w-[42ch] text-[0.875rem] md:text-[1.125rem] text-[#1A2A4A]/70 font-sans font-light leading-relaxed border-l border-[#B8A375]/30 pl-5 text-pretty">Fostering a global family rooted in shared ideals, beyond surface-level interactions.</p>
+                   <h3 className="font-serif font-medium text-3xl md:text-4xl mb-4 text-[#1A2A4A] leading-tight text-balance tracking-tighter">Youth <br/>Powered.</h3>
+                   <p className="max-w-[42ch] text-[0.875rem] md:text-[1.125rem] text-[#1A2A4A]/70 font-sans font-light leading-relaxed border-l border-[#B8A375]/30 pl-5 text-pretty">A network of young devotees across North America supporting and empowering each other to lead the future of ISKCON.</p>
                  </div>
                  {/* Perpetual Micro-Interaction: Live Status Badge */}
                  <div className="flex flex-col items-start md:items-end gap-2 shrink-0">
@@ -62,7 +63,7 @@ export function MissionSection() {
                       className="flex items-center gap-2 bg-white rounded-full px-4 py-2 shadow-sm border border-black/5"
                     >
                       <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#1A2A4A]">Live Vision</span>
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#1A2A4A]">Since 2013</span>
                     </motion.div>
                  </div>
                </div>
@@ -92,15 +93,15 @@ export function MissionSection() {
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 className="font-sans text-[clamp(5rem,12vw,12rem)] font-black absolute -right-4 -top-8 text-white/5 select-none pointer-events-none group-hover:scale-105 transition-transform duration-[3000ms] ease-out tabular-nums"
               >
-                10k
+                10+
               </motion.h3>
               
               <div className="relative z-10 w-full">
                 <div className="w-12 h-[1px] bg-[#B8A375] mb-8" />
                 <h4 className="font-serif text-4xl md:text-5xl mb-4 text-[#FDFBF7] tracking-tighter">
-                  Inner Growth
+                  Years Strong
                 </h4>
-                <p className="text-[#FDFBF7]/60 font-sans text-[10px] md:text-xs leading-relaxed uppercase tracking-[0.2em] font-bold">10,000+ Youth Reached</p>
+                <p className="text-[#FDFBF7]/60 font-sans text-[10px] md:text-xs leading-relaxed uppercase tracking-[0.2em] font-bold">Building the foundation of devotion</p>
               </div>
             </div>
           </motion.div>
@@ -124,9 +125,9 @@ export function MissionSection() {
                  <span className="font-serif text-[#3C2A00] font-bold text-2xl">ॐ</span>
                </motion.div>
                <div className="relative z-10 mt-auto">
-                  <h4 className="font-serif text-4xl md:text-5xl font-medium text-[#3C2A00] mb-6 tracking-tighter text-balance">Sacred Spaces.</h4>
+                  <h4 className="font-serif text-4xl md:text-5xl font-medium text-[#3C2A00] mb-6 tracking-tighter text-balance">Spiritual Activism.</h4>
                   <p className="max-w-[42ch] text-[0.875rem] md:text-[1.125rem] text-[#3C2A00]/70 font-sans font-light leading-relaxed border-l border-[#B8A375]/40 pl-5 text-pretty">
-                    Creating environments where the soul can rest and the mind can focus. Both physically and digitally.
+                    Creating opportunities to serve together through local and national communities across North America.
                   </p>
                </div>
              </div>

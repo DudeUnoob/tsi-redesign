@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const values = [
-  "To empower individuals to take the next step in their spiritual journey.",
-  "To create opportunities for the next generation to serve together through active community.",
-  "To inspire lasting and meaningful relationships.",
-  "To provide and promote a medium where youth feel empowered & willing to serve in their unique capacity."
+  "To empower individuals to take the next step in their Krishna Consciousness.",
+  "To create opportunities for ISKCON’s next generation to serve together through spiritual activism.",
+  "To inspire lasting and meaningful spiritual relationships.",
+  "To provide a medium where Krishna conscious youth feel empowered to serve in their unique capacity."
 ];
 
 export function ProgramsSection() {
@@ -66,7 +66,7 @@ export function ProgramsSection() {
                     </span>
                     <div className="w-12 h-[1px] bg-[#1A2A4A]/10 group-hover:w-24 group-hover:bg-[#B8A375] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]" />
                   </div>
-                  <p className="text-xl md:text-2xl text-[#1A2A4A] group-hover:text-[#FDFBF7] leading-relaxed font-serif tracking-tight">
+                  <p className="text-lg md:text-xl text-[#1A2A4A] group-hover:text-[#FDFBF7] leading-relaxed font-sans font-light tracking-tight">
                     {v}
                   </p>
                 </div>

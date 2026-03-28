@@ -4,7 +4,13 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
-const menuItems = ["Merch Store", "Resources", "Events", "Contact Us"];
+const menuItems = [
+  { label: "Our Mission", href: "#who-are-we" },
+  { label: "Events", href: "#events" },
+  { label: "Resources", href: "#resources" },
+  { label: "Our Values", href: "#programs" },
+  { label: "Merch Store", href: "https://www.sangainitiative.org/merch-store" },
+];
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +29,19 @@ export function Navigation() {
           <Link href="/" className="interactive group relative overflow-hidden flex items-center justify-center bg-[#1A2A4A] text-white font-sans font-medium px-5 py-2.5 rounded-full ml-1">
             <span className="relative z-10 tracking-widest text-sm uppercase">TSI</span>
           </Link>
+
+          {/* Desktop Links (Hidden on small mobile, visible on md+) */}
+          <div className="hidden md:flex items-center gap-6 px-4">
+            {menuItems.slice(0, 4).map((item) => (
+              <Link 
+                key={item.label} 
+                href={item.href}
+                className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#1A2A4A]/60 hover:text-[#1A2A4A] transition-colors interactive"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
 
           {/* Hamburger Morph - fluid dynamics (Absolute Positioning) */}
           <button 
@@ -57,14 +76,14 @@ export function Navigation() {
             animate={{ opacity: 1, backdropFilter: "blur(40px)" }}
             exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
             transition={{ ease: [0.32, 0.72, 0, 1], duration: 0.8 }}
-            className="fixed inset-0 z-[90] bg-[#FDFBF7]/80 flex flex-col items-center justify-center pointer-events-auto overflow-y-auto py-24"
+            className="fixed inset-0 z-[90] bg-[#FDFBF7]/80 flex flex-col items-center justify-start pointer-events-auto overflow-y-auto pt-28 pb-16"
           >
             {/* Minimal grain map overlay */}
             <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none mix-blend-multiply" />
 
             <div className="flex flex-col items-center gap-8 relative z-10">
               {menuItems.map((item, idx) => (
-                <div key={item} className="overflow-hidden p-2">
+                <div key={item.label} className="overflow-hidden p-2">
                   <motion.div
                     initial={{ y: 48, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -76,11 +95,11 @@ export function Navigation() {
                     }}
                   >
                     <Link 
-                      href={`#${item.toLowerCase().replace(" ", "-")}`}
+                      href={item.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-4xl sm:text-5xl md:text-8xl font-serif font-medium text-[#1A2A4A] hover:text-[#B8A375] transition-colors interactive duration-500 tracking-tighter"
+                      className="text-4xl sm:text-5xl md:text-6xl font-serif font-medium text-[#1A2A4A] hover:text-[#B8A375] transition-colors interactive duration-500 tracking-tighter"
                     >
-                      {item}
+                      {item.label}
                     </Link>
                   </motion.div>
                 </div>
@@ -94,7 +113,7 @@ export function Navigation() {
                 className="mt-12"
               >
                 <Link 
-                  href="#donate" 
+                  href="https://www.sangainitiative.org/donate" 
                   onClick={() => setIsOpen(false)}
                   className="interactive px-12 py-4 rounded-full bg-[#1A2A4A] text-white font-sans uppercase tracking-[0.2em] transition-all hover:bg-[#B8A375] duration-500 font-bold text-[10px] md:text-sm shadow-[0_20px_40px_-15px_rgba(26,42,74,0.3)]"
                 >

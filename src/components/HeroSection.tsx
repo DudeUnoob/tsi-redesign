@@ -23,7 +23,7 @@ const textRevealChild = {
 export function HeroSection() {
   return (
     <section className="relative min-h-[100dvh] w-full flex flex-col items-center justify-center z-10 overflow-hidden pt-32 pb-16">
-      <div className="w-full flex flex-col md:flex-row items-center justify-between z-20 gap-16 md:gap-8">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between z-20 gap-16 md:gap-8 max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Left Content Column (The Editorial Split - 50%) */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-12">
@@ -32,10 +32,10 @@ export function HeroSection() {
             variants={textRevealContainer}
             initial="hidden"
             animate="visible"
-            className="font-serif text-[clamp(3.5rem,10vw,8rem)] leading-[0.85] tracking-tighter text-[#1A2A4A] relative z-20"
+            className="font-serif text-[clamp(3.5rem,10vw,7.5rem)] leading-[0.85] tracking-tighter text-[#1A2A4A] relative z-20"
           >
             <div className="overflow-hidden pb-4 flex items-center gap-4">
-              <motion.h1 variants={textRevealChild} className="italic pr-4">Ancient</motion.h1> 
+              <motion.h1 variants={textRevealChild} className="pr-4">Connect.</motion.h1> 
               {/* Animated Floating Accent */}
               <motion.div 
                 variants={textRevealChild}
@@ -47,11 +47,11 @@ export function HeroSection() {
               </motion.div>
             </div>
             <div className="overflow-hidden pb-4">
-              <motion.h1 variants={textRevealChild}>Wisdom.</motion.h1>
+              <motion.h1 variants={textRevealChild} className="italic text-[#8092B7]">Empower.</motion.h1>
             </div>
             <div className="overflow-hidden pb-4">
-              <motion.h1 variants={textRevealChild} className="font-sans font-medium text-[#8092B7] tracking-tight text-balance">
-                Modern <span className="text-[#1A2A4A] italic">Meditation.</span>
+              <motion.h1 variants={textRevealChild} className="font-sans font-medium text-[#1A2A4A] tracking-tight text-balance">
+                Lead <span className="text-[#8092B7] italic">Together.</span>
               </motion.h1>
             </div>
           </motion.div>
@@ -62,7 +62,7 @@ export function HeroSection() {
             transition={{ duration: 1.2, delay: 0.8, ease: [0.32, 0.72, 0, 1] }}
             className="max-w-[42ch] text-[1.125rem] text-[#1A2A4A]/70 font-sans font-light leading-relaxed text-pretty ml-2 border-l border-[#B8A375]/30 pl-6"
           >
-            Digital and physical sanctuaries for the conscious mind. Connect with a community that values depth, devotion, and growth.
+            To connect Krishna Conscious youth in North America and empower them to become leaders for the next generation.
           </motion.p>
 
           <motion.div
@@ -74,7 +74,7 @@ export function HeroSection() {
             {/* Button-in-Button Trailing Icon & Magnetic Effect */}
             <button className="group flex items-center bg-[#1A2A4A] rounded-full p-2 pl-8 cursor-none interactive active:scale-[0.98] shadow-[0_20px_40px_-15px_rgba(26,42,74,0.3)]">
               <span className="text-[#FDFBF7] font-sans uppercase tracking-[0.2em] text-[10px] md:text-xs font-bold mr-6">
-                Join the Movement
+                Join our Retreats
               </span>
               <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-[#B8A375] group-hover:scale-105 group-hover:-translate-y-[1px]">
                 <ArrowUpRight weight="light" className="text-[#FDFBF7] w-5 h-5 group-hover:translate-x-[1px] group-hover:-translate-y-[1px] transition-transform duration-500" />
@@ -96,7 +96,7 @@ export function HeroSection() {
                 <img 
                   src="/VrindavanYatra-451.webp"
                   onError={(e) => { e.currentTarget.src = 'https://picsum.photos/seed/sanga1/800/1000' }}
-                  alt="Sanctuary architecture"
+                  alt="Camp Ignite Community"
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[2000ms] ease-out"
                 />
                 <div className="absolute top-4 left-4 rounded-full bg-[#FDFBF7]/90 backdrop-blur-md px-4 py-2 shadow-sm border border-black/5">
@@ -116,7 +116,7 @@ export function HeroSection() {
               <div className="double-bezel-inner relative bg-[#1A2A4A]">
                 <img 
                   src="https://picsum.photos/seed/sanga2/600/600"
-                  alt="Community gathering"
+                  alt="Retreat gathering"
                   className="w-full h-full object-cover mix-blend-luminosity opacity-60 group-hover:mix-blend-normal group-hover:opacity-100 transition-all duration-1000"
                 />
               </div>
