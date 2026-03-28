@@ -1,8 +1,8 @@
 "use client";
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { ArrowRight, Sparkle } from "@phosphor-icons/react";
 import { useEffect, useRef } from "react";
+import { IconSparkles, IconArrowRight } from '@tabler/icons-react';
 
 const textRevealContainer = {
   hidden: { opacity: 0 },
@@ -75,7 +75,7 @@ export function HeroSection() {
                 <span className="italic pr-4">Ancient</span> 
                 {/* Colorize: Bright Gold Pop out of nowhere */}
                 <div className="w-16 h-16 md:w-24 md:h-24 rounded-full bg-[#B8A375] flex items-center justify-center -rotate-12 shadow-2xl shadow-[#B8A375]/40 mt-4">
-                  <Sparkle weight="fill" className="text-[#FCFBF2] text-3xl md:text-5xl" />
+                  <IconSparkles stroke={1.5} className="text-[#FCFBF2] w-8 h-8 md:w-12 md:h-12" />
                 </div>
               </motion.h1>
             </div>
@@ -85,7 +85,7 @@ export function HeroSection() {
               </motion.h1>
             </div>
             <div className="overflow-hidden pb-4">
-              <motion.h1 variants={textRevealChild} className="font-sans font-bold text-[#8092B7] uppercase tracking-tighter">
+              <motion.h1 variants={textRevealChild} className="font-sans font-medium text-[#8092B7] tracking-tight text-balance">
                 Modern <span className="text-[#1A2A4A]">Meditation.</span>
               </motion.h1>
             </div>
@@ -96,7 +96,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.8, ease: [0.32, 0.72, 0, 1] }}
-            className="max-w-[36ch] text-[1rem] md:text-[1.125rem] text-sanga-navy/80 font-sans font-light leading-relaxed text-balance border-l-2 border-sanga-gold pl-5 ml-2"
+            className="max-w-[42ch] text-[1rem] md:text-[1.125rem] text-sanga-navy/80 font-sans font-light leading-relaxed text-pretty border-l-2 border-sanga-gold pl-5 ml-2"
           >
             Digital and physical sanctuaries for the conscious mind. Connect with a community that values depth, devotion, and growth.
           </motion.p>
@@ -113,7 +113,7 @@ export function HeroSection() {
                 Join the Movement
               </span>
               <div className="w-14 h-14 rounded-full bg-[#FCFBF2]/10 flex items-center justify-center transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:bg-[#B8A375] group-hover:scale-105 group-active:scale-95 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-[#B8A375]/40">
-                <ArrowRight weight="bold" className="text-[#FCFBF2] text-lg group-hover:-rotate-45 transition-transform duration-500" />
+                <IconArrowRight stroke={1.5} className="text-[#FCFBF2] w-6 h-6 group-hover:-rotate-45 transition-transform duration-500" />
               </div>
             </button>
           </motion.div>

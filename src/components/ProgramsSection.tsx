@@ -30,11 +30,11 @@ export function ProgramsSection() {
               <span className="w-2 h-2 rounded-full bg-[#B8A375]" />
               Core Principles
             </span>
-            <h2 className="font-serif text-fluid-h2 tracking-tighter text-[#1A2A4A]">
+            <h2 className="font-serif text-fluid-h2 tracking-tighter text-[#1A2A4A] text-balance">
               OUR <br/>
               <span className="text-[#B8A375] italic pr-4">VALUES.</span>
             </h2>
-            <p className="text-2xl text-[#1A2A4A]/80 max-w-sm leading-relaxed font-sans border-l-2 border-[#B8A375] pl-6 ml-2 mt-4">
+            <p className="text-2xl text-[#1A2A4A]/80 max-w-sm leading-relaxed font-sans border-l-2 border-[#B8A375] pl-6 ml-2 mt-4 text-pretty">
               These shared pillars guide everything we do within the community.
             </p>
           </div>
@@ -67,7 +67,7 @@ export function ProgramsSection() {
                <div className="w-full bg-[#FCFBF2] group-hover:bg-[#0D182E] group-hover:text-[#FCFBF2] transition-colors duration-[800ms] rounded-[calc(2rem-8px)] p-12 md:p-16 flex flex-col gap-8">
                  <div className="flex items-center justify-between">
                    <span className="font-serif text-4xl text-[#1A2A4A]/20 group-hover:text-[#B8A375] transition-colors duration-500">
-                     O{i + 1}.
+                     0{i + 1}.
                    </span>
                    <div className="w-16 h-1 bg-[#1A2A4A]/10 group-hover:w-32 group-hover:bg-[#B8A375] transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]" />
                  </div>

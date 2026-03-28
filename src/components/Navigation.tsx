@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { List, X } from "@phosphor-icons/react";
 
 const menuItems = ["Merch Store", "Resources", "Events", "Contact Us"];
 

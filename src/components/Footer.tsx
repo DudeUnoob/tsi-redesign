@@ -12,11 +12,11 @@ export function Footer() {
         
         {/* Left Side */}
         <div className="md:col-span-7 flex flex-col gap-12">
-          <h2 className="font-serif text-fluid-h2 text-[#FCFBF2] leading-[0.9] tracking-tighter">
+          <h2 className="font-serif text-fluid-h2 text-[#FCFBF2] leading-[0.9] tracking-tighter text-balance">
             EMPOWER <br/>
             <span className="text-[#B8A375] italic pr-2">Next</span>Gen.
           </h2>
-          <p className="max-w-[36ch] text-[1rem] md:text-[1.125rem] text-[#FCFBF2]/75 font-sans font-light leading-relaxed border-l-2 border-sanga-gold pl-5 mt-4">
+          <p className="max-w-[42ch] text-[1rem] md:text-[1.125rem] text-[#FCFBF2]/75 font-sans font-light leading-relaxed border-l-2 border-sanga-gold pl-5 mt-4 text-pretty">
             Supporting each other to become leaders for the future of our movement.
           </p>
           <div className="mt-8 flex">
@@ -28,16 +28,16 @@ export function Footer() {
 
         {/* Right Side Links */}
         <div className="md:col-span-5 grid grid-cols-2 gap-8 md:mt-12">
-          <div className="flex flex-col gap-6 text-[#FCFBF2]/60 font-sans text-sm uppercase tracking-[0.2em] font-bold">
-            <h4 className="text-[#B8A375] mb-4 text-xs font-black">Explore</h4>
+          <div className="flex flex-col gap-6 text-[#FCFBF2]/80 font-sans text-sm tracking-wide font-medium">
+            <h4 className="text-[#B8A375] mb-2 text-xs uppercase tracking-widest font-bold">Explore</h4>
             <a href="#" className="interactive w-max hover:text-[#B8A375] hover:translate-x-2 transition-all duration-300">Camp Ignite</a>
             <a href="#" className="interactive w-max hover:text-[#B8A375] hover:translate-x-2 transition-all duration-300">Mentorship</a>
             <a href="#" className="interactive w-max hover:text-[#B8A375] hover:translate-x-2 transition-all duration-300">Merch Store</a>
             <a href="#" className="interactive w-max hover:text-[#B8A375] hover:translate-x-2 transition-all duration-300">Events</a>
           </div>
 
-          <div className="flex flex-col gap-6 text-[#FCFBF2]/60 font-sans text-sm uppercase tracking-[0.2em] font-bold">
-            <h4 className="text-[#B8A375] mb-4 text-xs font-black">Connect</h4>
+          <div className="flex flex-col gap-6 text-[#FCFBF2]/80 font-sans text-sm tracking-wide font-medium">
+            <h4 className="text-[#B8A375] mb-2 text-xs uppercase tracking-widest font-bold">Connect</h4>
             <a href="#" className="interactive w-max hover:text-[#B8A375] hover:translate-x-2 transition-all duration-300">Instagram</a>
             <a href="#" className="interactive w-max hover:text-[#B8A375] hover:translate-x-2 transition-all duration-300">Facebook</a>
             <a href="#" className="interactive w-max hover:text-[#B8A375] hover:translate-x-2 transition-all duration-300">YouTube</a>

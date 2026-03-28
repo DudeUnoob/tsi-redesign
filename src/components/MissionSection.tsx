@@ -18,7 +18,7 @@ export function MissionSection() {
       
       {/* Typeset & Bolder: Extreme scale and layout jump */}
       <div className="flex flex-col mb-32 relative z-20">
-        <span className="inline-block font-sans text-xs uppercase tracking-[0.3em] font-bold text-[#8092B7] mb-8">
+        <span className="inline-block font-sans text-xs uppercase tracking-[0.3em] font-bold text-[#8092B7] mb-8 tabular-nums">
           01 // Our Foundation
         </span>
         <h2 className="font-serif text-fluid-h2 text-[#1A2A4A] max-w-4xl text-balance">
@@ -48,8 +48,8 @@ export function MissionSection() {
             {/* Massive colorized tag block inside image */}
             <div className="absolute bottom-8 left-8 right-8 p-8 bg-[#FCFBF2]/95 backdrop-blur-xl rounded-[1.5rem] shadow-2xl flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border border-[#B8A375]/20">
               <div className="max-w-md">
-                <h3 className="font-serif font-medium text-4xl mb-4 text-[#1A2A4A] leading-tight">Authentic <br/>Connection.</h3>
-                <p className="max-w-[36ch] text-[1rem] md:text-[1.125rem] text-sanga-navy/75 font-sans font-light leading-relaxed border-l-2 border-sanga-gold pl-5">Fostering a global family rooted in shared ideals, beyond surface-level interactions.</p>
+                <h3 className="font-serif font-medium text-4xl mb-4 text-[#1A2A4A] leading-tight text-balance">Authentic <br/>Connection.</h3>
+                <p className="max-w-[42ch] text-[1rem] md:text-[1.125rem] text-sanga-navy/75 font-sans font-light leading-relaxed border-l-2 border-sanga-gold pl-5 text-pretty">Fostering a global family rooted in shared ideals, beyond surface-level interactions.</p>
               </div>
               <div className="w-16 h-16 rounded-full bg-[#B8A375] text-[#FCFBF2] flex items-center justify-center shrink-0">
                 <span className="font-bold text-2xl font-serif">A</span>
@@ -72,7 +72,7 @@ export function MissionSection() {
             {/* Colorize: Bright accent gradient bleeding from corner */}
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-[#B8A375] rounded-full blur-[80px] opacity-40 group-hover:opacity-60 transition-opacity duration-1000" />
             
-            <h3 className="font-sans text-fluid-number font-black absolute -right-4 -top-12 text-white/5 select-none pointer-events-none group-hover:scale-110 transition-transform duration-[3000ms] ease-out">
+            <h3 className="font-sans text-fluid-number font-black absolute -right-4 -top-12 text-white/5 select-none pointer-events-none group-hover:scale-110 transition-transform duration-[3000ms] ease-out tabular-nums">
               10k
             </h3>
             
@@ -98,8 +98,8 @@ export function MissionSection() {
                <span className="font-serif text-[#3C2A00] font-bold text-2xl">ॐ</span>
              </div>
              <div>
-                <h4 className="font-serif text-5xl font-medium text-[#3C2A00] mb-6 tracking-tight">Sacred Spaces.</h4>
-                <p className="max-w-[36ch] text-[1rem] md:text-[1.125rem] text-sanga-brown/80 font-sans font-light leading-relaxed border-l-2 border-sanga-gold pl-5">
+                <h4 className="font-serif text-5xl font-medium text-[#3C2A00] mb-6 tracking-tight text-balance">Sacred Spaces.</h4>
+                <p className="max-w-[42ch] text-[1rem] md:text-[1.125rem] text-sanga-brown/80 font-sans font-light leading-relaxed border-l-2 border-sanga-gold pl-5 text-pretty">
                   Creating environments where the soul can rest and the mind can focus. Both physically and digitally.
                 </p>
              </div>
