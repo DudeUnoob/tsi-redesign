@@ -39,7 +39,8 @@ const FlowBackground = memo(() => {
     let mousePos = viewCenter.clone();
 
     // Mouse movement
-    paper.view.onMouseMove = (event: paper.ToolEvent) => {
+    const tool = new paper.Tool();
+    tool.onMouseMove = (event: paper.ToolEvent) => {
         mousePos = event.point;
     };
 
@@ -84,7 +85,7 @@ const FlowBackground = memo(() => {
 
     return () => {
       paper.project.clear();
-      paper.view.onFrame = null;
+      paper.view.remove();
     };
   }, []);
 
