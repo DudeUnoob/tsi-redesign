@@ -11,20 +11,19 @@ type NavItem = {
 };
 
 const navItems: NavItem[] = [
-  { label: "Our Mission", href: "#who-are-we" },
+  { label: "Our Mission", href: "/#who-are-we" },
   {
     label: "Events",
-    href: "#events",
+    href: "/#events",
     children: [
+      { label: "TSI Regionals", href: "/regionals" },
       { label: "TSI Summit", href: "/tsi-summit" },
-      { label: "East Coast Retreat", href: "/east-coast-retreat" },
-      { label: "Midwest Retreat", href: "/midwest-retreat" },
-      { label: "West Coast Retreat", href: "/west-coast-retreat" },
-      { label: "Mission Trip", href: "/mission-trip" },
       { label: "Camp Ignite", href: "/camp-ignite" },
+      { label: "West Coast Retreat", href: "/west-coast-retreat" },
     ],
   },
-  { label: "Resources", href: "#resources" },
+  { label: "Leaders", href: "/leaders" },
+  { label: "Resources", href: "/resources" },
   {
     label: "Donate",
     href: "/donate",
