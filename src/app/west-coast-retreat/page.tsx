@@ -28,7 +28,7 @@ export default function WestCoastRetreatPage() {
         ctaLabel="Register Now"
         ctaHref="https://www.sangainitiative.org/west-coast-retreat-registration"
         note="Retreat starts on Sept 9th at 4:00 PM and ends on Sept 13th at 1:00 PM."
-        vibe="ethereal"
+        vibe="glass"
         heroLayout="split-right"
         themeColor="amber"
         highlightIcon={<Sun weight="duotone" />}
