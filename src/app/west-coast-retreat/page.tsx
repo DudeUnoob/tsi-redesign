@@ -30,7 +30,7 @@ export default function WestCoastRetreatPage() {
         note="Retreat starts on Sept 9th at 4:00 PM and ends on Sept 13th at 1:00 PM."
         vibe="glass"
         heroLayout="split-right"
-        themeColor="amber"
+        themeColor="orange"
         highlightIcon={<Sun weight="duotone" />}
         bentoSpans={["md:col-span-12", "md:col-span-6", "md:col-span-6", "md:col-span-12"]}
       />
