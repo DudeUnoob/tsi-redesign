@@ -24,7 +24,7 @@ export type EventPageLayoutProps = {
   note?: string;
   vibe?: "luxury" | "glass" | "structural";
   heroLayout?: "split-right" | "split-left" | "cascade";
-  themeColor?: "default" | "orange" | "sky" | "emerald" | "purple" | "rose";
+  themeColor?: "default" | "orange" | "sky" | "emerald" | "purple" | "rose" | "tropical";
   children?: React.ReactNode;
 };
 
@@ -35,6 +35,7 @@ const THEMES = {
   emerald: { text: "text-emerald-500", bg: "bg-emerald-500", shadow: "shadow-emerald-500/30", rgb: "16, 185, 129", gradient: "from-emerald-500" },
   purple: { text: "text-purple-500", bg: "bg-purple-500", shadow: "shadow-purple-500/30", rgb: "168, 85, 247", gradient: "from-purple-500" },
   rose: { text: "text-rose-500", bg: "bg-rose-500", shadow: "shadow-rose-500/30", rgb: "244, 63, 94", gradient: "from-rose-500" },
+  tropical: { text: "text-[#0F5132]", bg: "bg-[#0F5132]", shadow: "shadow-[#FFD700]/50", rgb: "15, 81, 50", gradient: "from-[#0F5132] via-[#FFD700]" },
 };
 
 export function EventPageLayout({
